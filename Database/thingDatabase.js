@@ -1,6 +1,6 @@
-/*  DATABASE
+/*  THING DATABASE
 * 
-*   This file acts as a makeshift database for our application to perform CRUD operations on our Thing objects
+*   This file acts as a makeshift database for our application to perform CRUD operations on our Thing resources
 *
 *   Author : Isaac Lock
 */
@@ -19,9 +19,9 @@ let idCounter = 4;
 
 //Our "Database" that will hold all of our things. We will populate it with some things to start with
 let things = [
-    new Thing(1, "foo", "A public foo thing"),
-    new Thing(2, "bar", "A public bar thing"),
-    new Thing(3, "foo", "A public foo thing")
+    new Thing(1, "foo", "A foo thing"),
+    new Thing(2, "bar", "A bar thing"),
+    new Thing(3, "foo", "A foo thing")
 ];
 
 /*----- PRIVATE FUNCTIONS -------------

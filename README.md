@@ -12,9 +12,10 @@ A "thing" in the context of this code base is the most generic resource this ser
 1. Public Things which represent any resource this server handles that is publically available aka requires no authentication
 2. Private Things which represent any resource this server handles that is NOT publically available aka requires authentication
 
-## Repository Contents and Description
+## Repository Contents and Descriptions
 
 ### Database Folder
+
 Contains a file called thingDatabase.js that acts as a makeshift database and interface that stores our thing objects in a list and exposes CRUD operation functions for usage in other areas of the application.
 
 ### Routes Folder
@@ -24,7 +25,7 @@ Contains the files related to routes this server would have available to it.
 This particular starting point includes three routing folders:
 1. publicThings: All routes related to publically available resources
 2. privateThings: All routes related to private resources that are only available after authentication with the server
-3. authentication: Simple and generic routes related to authentication such as login, logout, signup
+3. auth: Simple and generic routes related to authentication such as login, logout, signup
 
 ### Models Folder
 

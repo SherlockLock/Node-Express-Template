@@ -1,4 +1,4 @@
-/*  ROUTES
+/*  PUBLIC ROUTES
 * 
 *   This file contains all of the routes related to a specific resource the server has control over. 
 *
