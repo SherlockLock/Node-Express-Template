@@ -14,6 +14,9 @@ A "thing" in the context of this code base is the most generic resource this ser
 
 ## Repository Contents and Description
 
+### Database Folder
+Contains a file called thingDatabase.js that acts as a makeshift database and interface that stores our thing objects in a list and exposes CRUD operation functions for usage in other areas of the application.
+
 ### Routes Folder
 
 Contains the files related to routes this server would have available to it.
@@ -27,13 +30,15 @@ This particular starting point includes three routing folders:
 
 Where all of the code and logic related to representing models within the application are stored.
 
-### node_modules Folder
-
-### package.json & package-lock.json
-
 ### server.js
 
 The initializtion point for the server.
+
+### .env
+
+IMPORTANT: This file should NOT be public and should be included in a .gitignore file to prevent hostile agents from gaining access to sensitive details related to your server.
+
+This file servers as a place to store important and sensitive global variables within your application. 
 
 ## Technology
 
