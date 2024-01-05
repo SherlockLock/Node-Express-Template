@@ -33,39 +33,13 @@ Where all of the code and logic related to representing models within the applic
 
 ### server.js
 
-The initializtion point for the server.
+The initializtion and entry point for the server.
 
 ### .env
 
 IMPORTANT: This file should NOT be public and should be included in a .gitignore file to prevent hostile agents from gaining access to sensitive details related to your server.
 
 This file servers as a place to store important and sensitive global variables within your application. 
-
-## Technology
-
-TODO: Add Versions for each
-
-- Package Manager: Node Package Manager (npm)
-- Language: Javascript
-- Runtime Environment: Node.JS
-- Framework: Express
-
-## How To Start
-
-TODO: Write out Start Guide
-
-Install npm
-Install express
-Install Javascript
-Install Node.js
-
-Pull Repo
-Run Init
-Create packages
-
-Set up postman or localhost
-
-Test
 
 ## MIT License
 
