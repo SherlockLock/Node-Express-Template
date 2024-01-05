@@ -1,6 +1,9 @@
 /*  AUTHENTICATION ROUTES
 * 
-*   This file contains all of the routes related to logic performed with simple authentication using the passport module
+*   This file contains all of the routes related to logic performed with simple authentication.
+*
+*   Authentication for this server will be handled by the presence and validity of a JWT token sent in
+*   request headers made by the client. This header must be called 'authorization'
 *
 *   Author : Isaac Lock
 */
@@ -106,5 +109,20 @@ router.post('/signup', function(req, res, next) {
     }
 
 });
+
+/* You might be asking yourself "Where is the logout route?". Well, with this particular implementation, we do not need one.
+* It is assumed that the handling of the logout will be on the client side. 
+*
+* You are considered "Logged out" if you do not have a JWT token present when the request is made. 
+*
+*   The choice of how to handle your logged in state via token preservation on the client side is up to you.
+*
+*   The simplest way of handling this would be as follows:
+*       1. Make the login request
+*       2. On success, preserve the token in the browser
+*       3. If the token is present, present the logged in state of your application
+*       4. When you want to logout, simply remove the token from the browser
+*
+*/
 
 module.exports = router;

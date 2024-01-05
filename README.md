@@ -31,6 +31,11 @@ This particular starting point includes three routing folders:
 
 Where all of the code and logic related to representing models within the application are stored.
 
+### Services
+
+This folder contains one file, authenticate.js, and its purpose is to provide a middleware authentication function for
+use in routes that require authentication. In this instance, it is only used for privateThings routes.
+
 ### server.js
 
 The initializtion and entry point for the server.

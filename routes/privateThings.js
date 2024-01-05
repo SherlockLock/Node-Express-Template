@@ -35,6 +35,9 @@ const authenticate = require('../services/authenticate');
 * Section for all of middleware routes.
 */
 
+/* Simple Middleware for all routes to /privateThings that verifies an authorization header has been sent 
+* that holds a valid JWT token.
+*/
 router.all('/privateThings', authenticate, function(req, res, next) { next(); });
 
 /* Simple Middleware for all routes to /privateThings/:id that verify
